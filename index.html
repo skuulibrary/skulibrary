@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SKU Library</title>
-<meta charset="utf-8">
-<style>
-  html,body{height:100%;margin:0}
-  #app{position:fixed;inset:0;border:0;width:100%;height:100%}
-</style>
+  <title>SKU Library</title>
+  <meta charset="utf-8">
+
+  <link rel="icon" href="https://drive.google.com/thumbnail?id=1IXQOW9EEpzuu94Mxdw25nwKAwUyuLZhd">
+
+  <style>
+    html,body{height:100%;margin:0}
+    #app{position:fixed;inset:0;border:0;width:100%;height:100%}
+  </style>
 </head>
 <body>
-<iframe id="app" allowfullscreen="true" referrerpolicy="no-referrer"></iframe>
-<script>
-  const EMBED_B64="aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J5NlRYaVNZLV8yTGc5MFBFOWJhSzlxeS1GMlFWMkF5dXFyQjVOUjB2QmU0MFk2YzI5cVdzNTVGaTVROUx4RVgwMlQvZXhlYw==";
-  const f=document.getElementById('app');
-  f.src=atob(EMBED_B64);
-  window.onload=function(){ f.requestFullscreen().catch(()=>{}); };
-</script>
+
+  <iframe id="app" allowfullscreen="true" referrerpolicy="no-referrer"></iframe>
+
+  <script>
+    const APP_URL =
+      "https://script.google.com/macros/s/AKfycby6TXiSY-_2Lg90PE9baK9qy-F2QV2AyuqrB5NR0vBe40Y6c29qWs55Fi5Q9LxEX02T/exec";
+
+    const f = document.getElementById("app");
+    f.src = APP_URL;
+
+    window.onload = function () {
+      f.requestFullscreen().catch(() => {});
+    };
+  </script>
+
 </body>
 </html>
